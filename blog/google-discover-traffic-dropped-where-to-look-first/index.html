@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>&quot;Google Discover Traffic Dropped: Where to Look First&quot; · Dawn</title>
+<meta name="description" content="&quot;Diagnose a Google Discover traffic drop with page and country comparisons, indexing checks, and a practical plan for what to fix next.&quot;">
+<link rel="canonical" href="https://dongqi-yang.github.io/dawn/blog/google-discover-traffic-dropped-where-to-look-first/">
+<link rel="stylesheet" href="../../style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "\"Google Discover Traffic Dropped: Where to Look First\"", "description": "\"Diagnose a Google Discover traffic drop with page and country comparisons, indexing checks, and a practical plan for what to fix next.\"", "datePublished": "2026-11-17", "author": {"@type": "Person", "name": "gsc_gardener"}, "mainEntityOfPage": "https://dongqi-yang.github.io/dawn/blog/google-discover-traffic-dropped-where-to-look-first/"}</script>
+</head>
+<body>
+<main>
+  <nav><a href="../../">Dawn</a><a href="../">Blog</a></nav>
+  <h1>&quot;Google Discover Traffic Dropped: Where to Look First&quot;</h1>
+  <p class="note" style="margin-top:0;border:0;padding:0">By gsc_gardener · <time datetime="2026-11-17">2026-11-17</time></p>
+<h2>The short answer</h2>
+<p>A sudden Discover drop means you should investigate, not immediately rewrite your site. First establish whether Google is showing your articles less often, whether fewer people click when they appear, and whether the decline affects the whole site or a small group of pages.</p>
+<p>Start in Search Console&#x27;s <strong>Discover</strong> performance report, compare complete date ranges, then split the loss by page and country. Check ordinary Search performance separately. If both channels fall together, technical or broader visibility problems deserve more attention. If only Discover falls, investigate distribution, audience interests, and the content that previously drove the feed traffic.</p>
+<p>Discover is inherently less predictable than query-based Search. Eligibility does not guarantee appearances, and a sharp decline alone does not prove a penalty or a core update impact.</p>
+<h2>What you&#x27;re seeing</h2>
+<p>Discover recommends content based on people&#x27;s interests rather than a query they have just typed. An article can receive substantial exposure and then lose it as interests, available content, or Google&#x27;s systems change. Older content can also appear when it remains relevant; Discover is not exclusively a breaking-news feed.</p>
+<p>That makes a cliff in the chart ambiguous. A publication may have lost exposure across many articles, or a few unusually successful stories may simply have stopped circulating. Those situations need different responses.</p>
+<p>Start by separating these signals:</p>
+<ul><li><strong>Impressions fell:</strong> your content was shown less often. This establishes reduced exposure, not its cause.</li><li><strong>Impressions held up but clicks fell:</strong> CTR declined. Audience mix, presentation, and competing content are possible explanations.</li><li><strong>Both fell:</strong> reduced exposure and a different mix of appearances may be involved. Inspect the underlying pages before judging the site-wide CTR.</li></ul>
+<p>Search Console measures Google&#x27;s reported impressions and clicks, not on-site engagement or revenue. Analytics can help assess the business impact, but its session totals will not necessarily match Search Console clicks.</p>
+<h2>Where to look in Search Console</h2>
+<h3>Establish a clean comparison</h3>
+<p>Select the correct property, then open <strong>Performance → Discover</strong>, or the Discover entry in the performance navigation. The report appears only when a property has sufficient Discover data. Its absence is not proof that the site is ineligible.</p>
+<p>Enable clicks, impressions, and average CTR. Find the first clear change in the daily chart, then use the date filter&#x27;s comparison option to compare equal-length periods before and after it. Where possible, align weekdays and avoid comparing a completed period with an unfinished day. Recent data can be preliminary; check the report&#x27;s freshness before drawing conclusions.</p>
+<p>Use a longer view as well. A short comparison can mistake the end of a traffic spike for a permanent site-wide decline. Google&#x27;s <a href="https://support.google.com/webmasters/answer/9216516">Discover performance report documentation</a> explains the metrics and reporting limitations.</p>
+<h3>Split by page and country</h3>
+<p>In the <strong>Pages</strong> tab, compare clicks and impressions for the two periods. Export the comparison if it makes the changes easier to sort. Identify which URLs account for the largest absolute losses, not just the largest relative changes.</p>
+<p>Click a losing URL to apply a page filter and examine its timeline. Repeat for several articles from different sections and publication dates. Check whether previously successful articles faded without new articles replacing them.</p>
+<p>Next, clear the page filter and open <strong>Countries</strong>. Determine whether the decline is concentrated in your main market or spread across markets. Apply a country filter and return to Pages to see which articles lost exposure within that audience. Remove each filter when moving back to the site-wide view.</p>
+<p>Table rows may not reconcile perfectly with chart totals because reporting limits and aggregation apply. Treat them as diagnostic evidence, not a complete ledger of every appearance.</p>
+<h3>Check Search and indexing separately</h3>
+<p>Open <strong>Performance → Search results</strong>, choose Web search, and compare the same dates. Check site-wide trends, then the same losing URLs. Discover has no query or average-position diagnosis equivalent to the ordinary Search report; do not look for a keyword ranking that explains every feed change.</p>
+<p>Use <strong>URL Inspection</strong> on representative affected URLs to check indexing and the Google-selected canonical. Use the live test to investigate current accessibility or rendering, remembering that a successful live test does not prove indexing or Discover eligibility.</p>
+<p>Also review <strong>Page indexing</strong>, <strong>Manual actions</strong>, and <strong>Security issues</strong>. An empty manual-action report rules out a reported manual action, not every algorithmic or technical problem.</p>
+<h2>How to tell what&#x27;s going on</h2>
+<h3>Most losses come from a few articles</h3>
+<p>This points toward a concentrated exposure loss rather than evidence that the whole site has been excluded. Check whether those articles covered a time-sensitive event, seasonal interest, or a topic you have not covered recently.</p>
+<p>Compare publication activity and subject mix before and after the drop. If fewer relevant articles were published, that is useful context. It is not proof that publishing more will restore traffic, and there is no guaranteed posting frequency for Discover.</p>
+<h3>Many sections fall, but Web search is stable</h3>
+<p>This makes a broad indexing failure less likely, though it does not establish the cause. Review changes affecting Discover presentation or content: headline templates, lead images, image-preview directives, and editorial direction.</p>
+<p>Read Google&#x27;s <a href="https://developers.google.com/search/docs/appearance/google-discover">Discover guidance</a>. It recommends helpful, reliable, people-first content, accurate headlines, and compelling, high-quality images. Large images should be at least 1,200 pixels wide and enabled with <code>max-image-preview:large</code>, or by using AMP. These are recommendations, not a recipe that guarantees distribution.</p>
+<p>Check that relevant images remain crawlable and that a recent template change has not restricted previews. Do not assume an image issue caused the decline simply because you find room for improvement.</p>
+<h3>Discover and Web search both fall</h3>
+<p>Prioritize shared explanations. Investigate deployments, outages, accidental <code>noindex</code> directives, canonical changes, redirects, and content removals around the start date. Compare affected sections with unaffected ones.</p>
+<p>If a confirmed Google update overlaps the decline, treat the timing as a hypothesis, not a diagnosis. Consult Google&#x27;s <a href="https://developers.google.com/search/docs/appearance/core-updates">core update guidance</a> and assess the scope of the loss before making sweeping edits. Forum reports of similar timing cannot establish what happened to your property.</p>
+<h3>Impressions are steady, but CTR falls</h3>
+<p>Compare CTR on the same pages and within the same countries. A site-wide change may reflect different content or audiences rather than worse headlines.</p>
+<p>Check whether titles accurately communicate the story and whether the lead image is useful and representative. Avoid exaggeration, withholding essential context, or sensational imagery intended only to force a click. You cannot reconstruct every user&#x27;s feed from Search Console, so describe any presentation diagnosis as provisional.</p>
+<h2>What to do next</h2>
+<ol><li><strong>Save a baseline.</strong> Export the Discover comparison and record the first affected date, leading losing URLs, countries, and Web search trend. Keep your original evidence before changing anything.</li><li><strong>Build a short timeline.</strong> Add deployments, publishing changes, outages, image changes, and relevant confirmed Google announcements. Distinguish documented events from guesses.</li><li><strong>Inspect a representative sample.</strong> Include former top performers, recently published articles, different sections, and pages that remained stable. Check indexing, canonicals, rendered content, image access, and preview directives.</li><li><strong>Fix verified technical faults first.</strong> Remove unintended indexing restrictions, restore broken resources, and correct mistaken canonicals or redirects. Request indexing where appropriate after a meaningful fix; repeated requests are not a Discover recovery tactic.</li><li><strong>Review editorial usefulness.</strong> Ask whether an article offers original reporting, firsthand knowledge, or useful analysis beyond repeating existing coverage. Make authorship and sourcing clear. Improve genuine weaknesses rather than changing dates to make old content look new.</li><li><strong>Measure after each coherent change.</strong> Record what changed and when. Recheck page and country trends over complete reporting periods. Avoid changing headlines, templates, URLs, and publishing strategy simultaneously if you want to learn what helped.</li></ol>
+<p>For a technical escalation, provide the property scope, exact comparison dates, affected URL examples, country splits, and whether Web search also declined. A screenshot of total clicks alone leaves most of the important questions unanswered.</p>
+<h2>When to worry</h2>
+<p>Act promptly if important pages are unexpectedly excluded from indexing, requests are failing, a deployment introduced site-wide restrictions, or Search Console reports a security issue or manual action. Those are concrete problems regardless of Discover traffic.</p>
+<p>A sustained decline across many pages and markets also warrants a broader review, particularly when Web search falls too. There is no universal number of days after which a Discover decline becomes a penalty, and no reliable recovery deadline.</p>
+<p>If indexing is healthy and only Discover is volatile, resist emergency site-wide surgery. Continue publishing genuinely useful work, monitor complete periods, and build other ways to reach readers. Discover is best treated as additional distribution, not a dependable traffic commitment.</p>
+<h2>About Dawn</h2>
+<p>I built Dawn, an iPhone app for checking Google Search Console data: <a href="https://apps.apple.com/app/id6818511085">View it on the App Store</a>.</p>
+  <p class="note">Dawn is an independent app and is not affiliated with, endorsed by, or sponsored by Google LLC. Google Search Console is a trademark of Google LLC.</p>
+</main>
+</body>
+</html>
